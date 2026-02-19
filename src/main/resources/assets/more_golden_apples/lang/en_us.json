@@ -1,0 +1,28 @@
+{
+  "item.more_golden_apples.crimson_golden_apple": "Crimson-golden apple",
+  "item.more_golden_apples.purple_golden_apple": "Purple-golden apple",
+  "item.more_golden_apples.dark_golden_apple": "Dark-golden apple",
+  "item.more_golden_apples.abyss_golden_apple": "Abyss-golden apple",
+  "item.more_golden_apples.bad_apple": "BAD APPLE!!",
+
+  "effect.more_golden_apples.oceanic_bliss": "Oceanic bliss",
+  "effect.more_golden_apples.bad_apple": "BAD APPLE!!",
+
+  "advancement.more_golden_apples.has_crimson_golden_apple.title": " Forbidden Fruit of the underworld.",
+  "advancement.more_golden_apples.has_crimson_golden_apple.description": "secure the golden apple of crimson hue",
+  "advancement.more_golden_apples.has_purple_golden_apple.title": "To gaze into the void with a fearless heart.",
+  "advancement.more_golden_apples.has_purple_golden_apple.description": "secure the golden apple of purple hue",
+  "advancement.more_golden_apples.has_dark_golden_apple.title": "Devour the Night",
+  "advancement.more_golden_apples.has_dark_golden_apple.description": "secure the golden apple of dark hue",
+  "advancement.more_golden_apples.has_abyss_golden_apple.title": "The Castaway of the Deep",
+  "advancement.more_golden_apples.has_abyss_golden_apple.description": "secure the golden apple of abyss hue",
+
+
+  "more_golden_apples.configuration.title": "More golden apples Configs",
+  "more_golden_apples.configuration.section.more_golden_apples.common.toml": "More golden apples Configs",
+  "more_golden_apples.configuration.section.more_golden_apples.common.toml.title": "More golden apples Configs",
+  "more_golden_apples.configuration.items": "Item List",
+  "more_golden_apples.configuration.logDirtBlock": "Log Dirt Block",
+  "more_golden_apples.configuration.magicNumberIntroduction": "Magic Number Text",
+  "more_golden_apples.configuration.magicNumber": "Magic Number"
+}

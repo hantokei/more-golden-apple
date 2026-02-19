@@ -1,0 +1,6 @@
+{
+  "parent":  "minecraft:item/generated",
+  "textures": {
+    "layer0": "more_golden_apples:item/dark_golden_apple"
+  }
+}

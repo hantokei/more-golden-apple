@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:story/root",
+  "display": {
+    "icon": {
+      "id": "more_golden_apples:crimson_golden_apple"
+    },
+    "title": {
+      "translate": "advancement.more_golden_apples.has_crimson_golden_apple.title"
+    },
+    "description": {
+      "translate": "advancement.more_golden_apples.has_crimson_golden_apple.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_golden_apples:crimson_golden_apple"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

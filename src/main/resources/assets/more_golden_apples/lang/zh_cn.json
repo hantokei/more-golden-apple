@@ -1,0 +1,27 @@
+{
+  "item.more_golden_apples.crimson_golden_apple": "绯金苹果",
+  "item.more_golden_apples.purple_golden_apple": "紫金苹果",
+  "item.more_golden_apples.dark_golden_apple": "暗金苹果",
+  "item.more_golden_apples.abyss_golden_apple": "渊金苹果",
+  "item.more_golden_apples.bad_apple": "BAD APPLE!!",
+
+  "effect.more_golden_apples.oceanic_bliss": "海之祝福",
+  "effect.more_golden_apples.bad_apple": "BAD APPLE!!",
+
+  "advancement.more_golden_apples.has_crimson_golden_apple.title": "冥界的禁果",
+  "advancement.more_golden_apples.has_crimson_golden_apple.description": "取得那颗绯红之色的金苹果",
+  "advancement.more_golden_apples.has_purple_golden_apple.title": "无畏地凝视虚空",
+  "advancement.more_golden_apples.has_purple_golden_apple.description": "取得那颗淡紫之色的金苹果",
+  "advancement.more_golden_apples.has_dark_golden_apple.title": "吞噬黑暗",
+  "advancement.more_golden_apples.has_dark_golden_apple.description": "取得那颗深暗之色的金苹果",
+  "advancement.more_golden_apples.has_abyss_golden_apple.title": "深海弃儿",
+  "advancement.more_golden_apples.has_abyss_golden_apple.description": "取得那颗深渊之色的金苹果",
+
+  "more_golden_apples.configuration.title": "More golden apples Configs",
+  "more_golden_apples.configuration.section.more_golden_apples.common.toml": "More golden apples Configs",
+  "more_golden_apples.configuration.section.more_golden_apples.common.toml.title": "More golden apples Configs",
+  "more_golden_apples.configuration.items": "Item List",
+  "more_golden_apples.configuration.logDirtBlock": "Log Dirt Block",
+  "more_golden_apples.configuration.magicNumberIntroduction": "Magic Number Text",
+  "more_golden_apples.configuration.magicNumber": "Magic Number"
+}

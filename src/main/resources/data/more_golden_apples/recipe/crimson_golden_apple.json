@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "*": {
+      "item": "minecraft:nether_wart"
+    },
+    "X": {
+      "item": "minecraft:apple"
+    }
+  },
+  "pattern": [
+    "##*",
+    "#X*",
+    "#**"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_golden_apples:crimson_golden_apple"
+  }
+}
