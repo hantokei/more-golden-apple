@@ -13,8 +13,8 @@ public class ModEffects {
 
     public static final DeferredHolder<MobEffect,OceanicBlissEffect> OCEANIC_BLISS =
             EFFECTS.register("oceanic_bliss",OceanicBlissEffect::new);
-    public static final DeferredHolder<MobEffect,OceanicBlissEffect> BAD_APPLE =
-            EFFECTS.register("bad_apple",OceanicBlissEffect::new);
+    public static final DeferredHolder<MobEffect,BadAppleEffect> BAD_APPLE =
+            EFFECTS.register("bad_apple",BadAppleEffect::new);
 
     public static void register(IEventBus eventBus){
         EFFECTS.register(eventBus);

@@ -1,0 +1,17 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "one",
+    "dstrgb": "zero",
+    "srcalpha": "one",
+    "dstalpha": "zero"
+  },
+  "vertex": "more_golden_apples:bad_apple",
+  "fragment": "more_golden_apples:bad_apple",
+  "attributes": [ "Position" ],
+  "samplers": [
+    { "name": "DiffuseSampler" },
+    { "name": "DiffuseDepthSampler" }
+  ],
+  "uniforms": []
+}
