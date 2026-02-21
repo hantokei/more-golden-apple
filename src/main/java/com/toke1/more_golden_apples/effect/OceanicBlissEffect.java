@@ -1,4 +1,4 @@
-package com.toke1.golden_apples.effect;
+package com.toke1.more_golden_apples.effect;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;

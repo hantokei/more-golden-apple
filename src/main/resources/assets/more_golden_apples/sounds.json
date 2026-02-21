@@ -1,0 +1,11 @@
+{
+  "bad_apple_music": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "more_golden_apples:music/bad_apple",
+        "stream": true
+      }
+    ]
+  }
+}

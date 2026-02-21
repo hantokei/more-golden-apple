@@ -1,4 +1,4 @@
-package com.toke1.golden_apples;
+package com.toke1.more_golden_apples;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;

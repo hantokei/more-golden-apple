@@ -1,6 +1,6 @@
-package com.toke1.golden_apples.item;
+package com.toke1.more_golden_apples.item;
 
-import com.toke1.golden_apples.effect.ModEffects;
+import com.toke1.more_golden_apples.effect.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;

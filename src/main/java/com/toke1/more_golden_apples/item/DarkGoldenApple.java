@@ -1,4 +1,4 @@
-package com.toke1.golden_apples.item;
+package com.toke1.more_golden_apples.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

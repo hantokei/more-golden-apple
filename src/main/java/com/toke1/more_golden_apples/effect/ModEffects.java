@@ -1,6 +1,6 @@
-package com.toke1.golden_apples.effect;
+package com.toke1.more_golden_apples.effect;
 
-import com.toke1.golden_apples.MoreGoldenApples;
+import com.toke1.more_golden_apples.MoreGoldenApples;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffect;
 import net.neoforged.bus.api.IEventBus;

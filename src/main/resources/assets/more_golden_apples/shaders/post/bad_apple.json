@@ -5,17 +5,11 @@
       "name": "more_golden_apples:bad_apple",
       "intarget": "minecraft:main",
       "outtarget": "swap",
-      "auxtargets": [
-        {
-          "name": "PrevSampler",
-          "id": "minecraft:main"
-        }
+      "auxtargets": [{ "name": "PrevSampler", "id": "minecraft:main" }],
+      "uniforms": [
+        { "name": "Progress", "values": [ 1.0 ] }
       ]
     },
-    {
-      "name": "blit",
-      "intarget": "swap",
-      "outtarget": "minecraft:main"
-    }
+    { "name": "blit", "intarget": "swap", "outtarget": "minecraft:main" }
   ]
 }

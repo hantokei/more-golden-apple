@@ -1,7 +1,8 @@
-package com.toke1.golden_apples;
+package com.toke1.more_golden_apples;
 
-import com.toke1.golden_apples.effect.ModEffects;
-import com.toke1.golden_apples.item.ModItmes;
+import com.toke1.more_golden_apples.effect.ModEffects;
+import com.toke1.more_golden_apples.item.ModItmes;
+import com.toke1.more_golden_apples.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
@@ -37,6 +38,7 @@ public class MoreGoldenApples {
 
         ModItmes.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModSounds.register(modEventBus);
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (Moregoldenapples) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.

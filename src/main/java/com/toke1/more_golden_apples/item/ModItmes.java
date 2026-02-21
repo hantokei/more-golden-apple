@@ -1,6 +1,6 @@
-package com.toke1.golden_apples.item;
+package com.toke1.more_golden_apples.item;
 
-import com.toke1.golden_apples.MoreGoldenApples;
+import com.toke1.more_golden_apples.MoreGoldenApples;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
@@ -31,8 +31,8 @@ public class ModItmes {
                     .rarity(Rarity.RARE)
                     .food(AbyssGoldenApple.ABYSS_GOLD_APPLE)));
 
-    public static final DeferredItem<Item> BAD_APPLE =
-            ITEMS.register("bad_apple", () -> new Item(new Item.Properties()
+    public static final DeferredItem<BadAppleItem> BAD_APPLE =
+            ITEMS.register("bad_apple", () -> new BadAppleItem(new Item.Properties()
                     .rarity(Rarity.UNCOMMON)
                     .food(BadApple.BAD_APPLE)));
 
