@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "entries": [
+    "more_golden_apples:entity_drops/enderman_drop",
+    "more_golden_apples:entity_drops/elder_guardian_drop",
+    "more_golden_apples:entity_drops/zombified_piglin_drop",
+    "more_golden_apples:entity_drops/warden_drop",
+    "more_golden_apples:chest_loot/ancient_city_loot",
+    "more_golden_apples:chest_loot/buried_treasure_loot",
+    "more_golden_apples:chest_loot/ender_city_loot",
+    "more_golden_apples:chest_loot/bastion_generic_loot",
+    "more_golden_apples:chest_loot/bastion_treasure_loot",
+    "more_golden_apples:chest_loot/nether_bastion_loot",
+    "more_golden_apples:chest_loot/nether_fortress_loot",
+    "more_golden_apples:chest_loot/shipwreck_loot"
+  ]
+}

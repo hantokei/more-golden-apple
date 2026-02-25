@@ -1,0 +1,19 @@
+{
+  "type": "more_golden_apples:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        { "condition": "neoforge:loot_table_id", "loot_table_id": "minecraft:chests/bastion_bridge" },
+        { "condition": "neoforge:loot_table_id", "loot_table_id": "minecraft:chests/bastion_hoglin_stable" },
+        { "condition": "neoforge:loot_table_id", "loot_table_id": "minecraft:chests/bastion_other" }
+      ]
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.023
+    }
+  ],
+  "item": "more_golden_apples:enchanted_crimson_golden_apple",
+  "count": 1
+}

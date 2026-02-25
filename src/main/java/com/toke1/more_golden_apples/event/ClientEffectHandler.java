@@ -1,4 +1,4 @@
-package com.toke1.more_golden_apples.events;
+package com.toke1.more_golden_apples.event;
 
 import com.toke1.more_golden_apples.MoreGoldenApples;
 import com.toke1.more_golden_apples.effect.ModEffects;

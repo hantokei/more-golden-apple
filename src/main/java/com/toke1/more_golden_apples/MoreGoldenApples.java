@@ -1,7 +1,8 @@
 package com.toke1.more_golden_apples;
 
 import com.toke1.more_golden_apples.effect.ModEffects;
-import com.toke1.more_golden_apples.item.ModItmes;
+import com.toke1.more_golden_apples.item.ModItems;
+import com.toke1.more_golden_apples.loot.ModLootModifiers;
 import com.toke1.more_golden_apples.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,9 +37,10 @@ public class MoreGoldenApples {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        ModItmes.register(modEventBus);
+        ModItems.register(modEventBus);
         ModEffects.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (Moregoldenapples) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -69,22 +71,42 @@ public class MoreGoldenApples {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.insertAfter(
                     Items.GOLDEN_APPLE.getDefaultInstance(),
-                    ModItmes.CRIMSON_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.CRIMSON_GOLDEN_APPLE.get().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
             );
             event.insertAfter(
-                    ModItmes.CRIMSON_GOLDEN_APPLE.get().getDefaultInstance(),
-                    ModItmes.PURPLE_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.CRIMSON_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.PURPLE_GOLDEN_APPLE.get().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
             );
             event.insertAfter(
-                    ModItmes.PURPLE_GOLDEN_APPLE.get().getDefaultInstance(),
-                    ModItmes.DARK_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.PURPLE_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.DARK_GOLDEN_APPLE.get().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
             );
             event.insertAfter(
-                    ModItmes.DARK_GOLDEN_APPLE.get().getDefaultInstance(),
-                    ModItmes.ABYSS_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.DARK_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.ABYSS_GOLDEN_APPLE.get().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+            event.insertAfter(
+                    Items.ENCHANTED_GOLDEN_APPLE.getDefaultInstance(),
+                    ModItems.ENCHANTED_CRIMSON_GOLDEN_APPLE.get().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+            event.insertAfter(
+                    ModItems.ENCHANTED_CRIMSON_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.ENCHANTED_PURPLE_GOLDEN_APPLE.get().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+            event.insertAfter(
+                    ModItems.ENCHANTED_PURPLE_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.ENCHANTED_DARK_GOLDEN_APPLE.get().getDefaultInstance(),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+            event.insertAfter(
+                    ModItems.ENCHANTED_DARK_GOLDEN_APPLE.get().getDefaultInstance(),
+                    ModItems.ENCHANTED_ABYSS_GOLDEN_APPLE.get().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
             );
         }

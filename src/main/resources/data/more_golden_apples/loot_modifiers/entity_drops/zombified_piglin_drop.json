@@ -1,0 +1,21 @@
+{
+  "type": "more_golden_apples:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:zombified_piglin"
+      }
+    },
+    {
+      "condition": "minecraft:killed_by_player"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.01
+    }
+  ],
+  "item": "more_golden_apples:enchanted_crimson_golden_apple",
+  "count": 1
+}

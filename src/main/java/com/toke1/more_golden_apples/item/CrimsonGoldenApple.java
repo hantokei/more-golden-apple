@@ -12,4 +12,14 @@ public class CrimsonGoldenApple {
             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE,3600,0) ,1.0f)
             .effect(() -> new MobEffectInstance(ModEffects.PIGLIN_NEUTRAL,6000,0) ,1.0f)
             .alwaysEdible().build();
+
+    public static final FoodProperties ENCHANTED_CRIMSON_GOLD_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(1.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION,2400,3) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION,400,1) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,6000,0) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE,36000,0) ,1.0f)
+            .effect(() -> new MobEffectInstance(ModEffects.PIGLIN_NEUTRAL,9600,0) ,1.0f)
+            .alwaysEdible().build();
 }
+
+

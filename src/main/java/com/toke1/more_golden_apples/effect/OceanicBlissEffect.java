@@ -13,7 +13,7 @@ import net.minecraft.world.entity.player.Player;
 public class OceanicBlissEffect extends MobEffect {
 
     public OceanicBlissEffect() {
-        super(MobEffectCategory.NEUTRAL, 0x2E8BC0);
+        super(MobEffectCategory.BENEFICIAL, 0x2E8BC0);
     }
     private static final ResourceLocation OCEANIC_DAMAGE_ID =
             ResourceLocation.fromNamespaceAndPath("more_golden_apples", "oceanic_damage");

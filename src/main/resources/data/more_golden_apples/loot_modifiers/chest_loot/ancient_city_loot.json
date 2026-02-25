@@ -1,0 +1,12 @@
+{
+  "type": "more_golden_apples:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    { "condition": "minecraft:random_chance", "chance": 0.045 }
+  ],
+  "item": "more_golden_apples:enchanted_dark_golden_apple",
+  "count": 1
+}

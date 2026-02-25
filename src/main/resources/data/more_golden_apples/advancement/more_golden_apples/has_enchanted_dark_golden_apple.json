@@ -2,13 +2,13 @@
   "parent": "minecraft:story/root",
   "display": {
     "icon": {
-      "id": "more_golden_apples:dark_golden_apple"
+      "id": "more_golden_apples:enchanted_dark_golden_apple"
     },
     "title": {
-      "translate": "advancement.more_golden_apples.has_dark_golden_apple.title"
+      "translate": "advancement.more_golden_apples.has_enchanted_dark_golden_apple.title"
     },
     "description": {
-      "translate": "advancement.more_golden_apples.has_dark_golden_apple.description"
+      "translate": "advancement.more_golden_apples.has_enchanted_dark_golden_apple.description"
     },
     "frame": "goal",
     "show_toast": true,
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "more_golden_apples:dark_golden_apple"
+              "more_golden_apples:enchanted_dark_golden_apple"
             ]
           }
         ]

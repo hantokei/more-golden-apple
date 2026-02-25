@@ -13,4 +13,14 @@ public class DarkGoldenApple {
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,9600,1) ,1.0f)
             .effect(() -> new MobEffectInstance(ModEffects.SCULK_WALKER,9600,0) ,1.0f)
             .alwaysEdible().build();
+
+    public static final FoodProperties ENCHANTED_DARK_GOLD_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(1.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION,2400,3) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION,400,1) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,6000,0) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE,5000,0) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION,36000,0) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,36000,2) ,1.0f)
+            .effect(() -> new MobEffectInstance(ModEffects.SCULK_WALKER,36000,0) ,1.0f)
+            .alwaysEdible().build();
 }

@@ -5,6 +5,6 @@ import net.minecraft.world.effect.MobEffectCategory;
 
 public class EnderizationEffect extends MobEffect {
     public EnderizationEffect(){
-        super(MobEffectCategory.BENEFICIAL ,0xB415FF);
+        super(MobEffectCategory.NEUTRAL ,0xB415FF);
     }
 }
