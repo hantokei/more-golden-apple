@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class PiglinAiMixin {
     @Inject(method = "isWearingGold", at = @At("HEAD"), cancellable = true)
     private static void injectPiglinNeutralEffect(LivingEntity entity, CallbackInfoReturnable<Boolean> cir){
-        if(entity.hasEffect(ModEffects.PIGLIN_NEUTRAL)){
+        if(entity.hasEffect(ModEffects.GOLDEN_GLOW)){
             cir.setReturnValue(true);
         }
     }
