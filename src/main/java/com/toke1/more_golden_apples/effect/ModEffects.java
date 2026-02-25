@@ -11,6 +11,12 @@ public class ModEffects {
     public static final DeferredRegister<MobEffect> EFFECTS =
             DeferredRegister.create(Registries.MOB_EFFECT, MoreGoldenApples.MOD_ID);
 
+    public static final DeferredHolder<MobEffect,PiglinNeutralEffect> PIGLIN_NEUTRAL =
+            EFFECTS.register("piglin_neutral",PiglinNeutralEffect::new);
+    public static final DeferredHolder<MobEffect,EnderizationEffect> ENDERIZATION =
+            EFFECTS.register("enderization",EnderizationEffect::new);
+    public static final DeferredHolder<MobEffect,SculkWalkerEffect> SCULK_WALKER =
+            EFFECTS.register("sculk_walker",SculkWalkerEffect::new);
     public static final DeferredHolder<MobEffect,OceanicBlissEffect> OCEANIC_BLISS =
             EFFECTS.register("oceanic_bliss",OceanicBlissEffect::new);
     public static final DeferredHolder<MobEffect,BadAppleEffect> BAD_APPLE =
