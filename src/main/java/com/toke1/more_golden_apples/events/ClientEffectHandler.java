@@ -6,6 +6,7 @@ import com.toke1.more_golden_apples.sound.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.PostChain;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -15,6 +16,7 @@ import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 
 import java.lang.reflect.Field;
 import java.util.List;
+
 
 @EventBusSubscriber(modid = MoreGoldenApples.MOD_ID, value = Dist.CLIENT)
 public class ClientEffectHandler {
@@ -28,8 +30,26 @@ public class ClientEffectHandler {
     @SubscribeEvent
     public static void onClientTick(ClientTickEvent.Post event) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.player == null) return;
+        if (mc.player == null || mc.level == null) return;
+        //SCULK_WALKER
+        if (mc.player.hasEffect(ModEffects.SCULK_WALKER)) {
+            if (mc.player.getDeltaMovement().horizontalDistanceSqr() > 1.0E-7D || mc.player.getRandom().nextFloat() < 0.1f) {
+                double x = mc.player.getX() + (mc.player.getRandom().nextDouble() - 0.5) * 0.4;
+                double y = mc.player.getY() + 0.3;
+                double z = mc.player.getZ() + (mc.player.getRandom().nextDouble() - 0.5) * 0.4;
+                mc.level.addParticle(ParticleTypes.SCULK_SOUL, x, y, z, 0.0, 0.05, 0.0);
+            }
+        }
 
+        if (mc.player.hasEffect(ModEffects.ENDERIZATION)){
+            if(mc.player.getRandom().nextFloat() < 0.3f){
+                mc.level.addParticle(ParticleTypes.PORTAL,
+                        mc.player.getRandomX(0.5), mc.player.getRandomY(), mc.player.getRandomZ(0.5),
+                        0,0,0);
+            }
+        }
+
+        //BAD APPLE
         var effect = mc.player.getEffect(ModEffects.BAD_APPLE);
         if (effect != null) {
             if (lastDuration == -1 || effect.getDuration() > lastDuration + 5) {
