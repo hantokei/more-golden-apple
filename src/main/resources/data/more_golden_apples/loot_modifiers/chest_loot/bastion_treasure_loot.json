@@ -7,7 +7,7 @@
     },
     {
       "condition": "minecraft:random_chance",
-      "chance": 0.0263
+      "chance": 0.045
     }
   ],
   "item": "more_golden_apples:enchanted_crimson_golden_apple",

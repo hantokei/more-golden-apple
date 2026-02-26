@@ -10,27 +10,33 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 // Demonstrates how to use Neo's config APIs
 public class Config {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+    // --- Oceanic Bliss ---
+    public static final ModConfigSpec.BooleanValue ENABLE_MINING_FATIGUE_IMMUNE = BUILDER
+            .comment("是否在水下免疫挖掘疲劳效果")
+            .translation("more_golden_apples.configuration.oceanic_bliss.enable_mining_fatigueImmune")
+            .define("oceanic_bliss.enableMiningFatigueImmune", true);
 
-    public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
-            .comment("Whether to log the dirt block on common setup")
-            .define("logDirtBlock", true);
+    public static final ModConfigSpec.DoubleValue WATER_DAMAGE_BOOST_PER_LEVEL = BUILDER
+            .comment("水下每级伤害加成")
+            .translation("more_golden_apples.configuration.oceanic_bliss.damage_boost_perLevel")
+            .defineInRange("oceanic_bliss.damageBoostPerLevel", 2.0, 0.0, 100.0);
 
-    public static final ModConfigSpec.IntValue MAGIC_NUMBER = BUILDER
-            .comment("A magic number")
-            .defineInRange("magicNumber", 42, 0, Integer.MAX_VALUE);
+    // --- Enderization ---
+    public static final ModConfigSpec.BooleanValue ENABLE_VOID_TELEPORT = BUILDER
+            .comment("是否启用虚空传送保护")
+            .translation("more_golden_apples.configuration.enderization.enable_void_teleport")
+            .define("enderization.enableVoidTeleport", true);
 
-    public static final ModConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
-            .comment("What you want the introduction message to be for the magic number")
-            .define("magicNumberIntroduction", "The magic number is... ");
-
-    // a list of strings that are treated as resource locations for items
-    public static final ModConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
-            .comment("A list of items to log on common setup.")
-            .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), () -> "", Config::validateItemName);
+    public static final ModConfigSpec.DoubleValue DODGE_CHANCE_PER_LEVEL = BUILDER
+            .comment("每级避开弹射物的几率 (0.5 = 50%)")
+            .translation("more_golden_apples.configuration.enderization.dodge_chance_perLevel")
+            .defineInRange("enderization.dodgeChancePerLevel", 0.5, 0.0, 1.0);
 
     static final ModConfigSpec SPEC = BUILDER.build();
 
     private static boolean validateItemName(final Object obj) {
         return obj instanceof String itemName && BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(itemName));
     }
+
+
 }

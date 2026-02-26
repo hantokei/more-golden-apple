@@ -24,11 +24,10 @@
   "advancement.more_golden_apples.has_enchanted_abyss_golden_apple.title": "深海弃儿",
   "advancement.more_golden_apples.has_enchanted_abyss_golden_apple.description": "取得那颗深渊之色的金苹果",
 
-  "more_golden_apples.configuration.title": "More golden apples Configs",
-  "more_golden_apples.configuration.section.more_golden_apples.common.toml": "More golden apples Configs",
-  "more_golden_apples.configuration.section.more_golden_apples.common.toml.title": "More golden apples Configs",
-  "more_golden_apples.configuration.items": "Item List",
-  "more_golden_apples.configuration.logDirtBlock": "Log Dirt Block",
-  "more_golden_apples.configuration.magicNumberIntroduction": "Magic Number Text",
-  "more_golden_apples.configuration.magicNumber": "Magic Number"
+  "more_golden_apples.configuration.oceanic_bliss": "海洋祝福效果 设置",
+  "more_golden_apples.configuration.enderization": "末影化效果 设置",
+  "more_golden_apples.configuration.enderization.enable_void_teleport": "虚空传送保护",
+  "more_golden_apples.configuration.enderization.dodge_chance_perLevel": "每级闪避几率",
+  "more_golden_apples.configuration.oceanic_bliss.enable_mining_fatigueImmune": "水下免疫挖掘疲劳",
+  "more_golden_apples.configuration.oceanic_bliss.damage_boost_perLevel": "水下伤害加成/级"
 }

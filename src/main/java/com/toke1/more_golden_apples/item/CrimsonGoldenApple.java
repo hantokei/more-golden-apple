@@ -18,7 +18,7 @@ public class CrimsonGoldenApple {
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION,400,1) ,1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,6000,0) ,1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE,36000,0) ,1.0f)
-            .effect(() -> new MobEffectInstance(ModEffects.GOLDEN_GLOW,9600,0) ,1.0f)
+            .effect(() -> new MobEffectInstance(ModEffects.GOLDEN_GLOW,36000,0) ,1.0f)
             .alwaysEdible().build();
 }
 

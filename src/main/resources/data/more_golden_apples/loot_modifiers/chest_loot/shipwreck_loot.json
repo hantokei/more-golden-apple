@@ -5,7 +5,7 @@
       "condition": "neoforge:loot_table_id",
       "loot_table_id": "minecraft:chests/shipwreck_treasure"
     },
-    { "condition": "minecraft:random_chance", "chance": 0.014 }
+    { "condition": "minecraft:random_chance", "chance": 0.012 }
   ],
   "item": "more_golden_apples:enchanted_abyss_golden_apple",
   "count": 1

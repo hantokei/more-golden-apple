@@ -19,8 +19,8 @@ public class DarkGoldenApple {
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION,400,1) ,1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,6000,0) ,1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE,5000,0) ,1.0f)
-            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION,36000,0) ,1.0f)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,36000,2) ,1.0f)
-            .effect(() -> new MobEffectInstance(ModEffects.SCULK_WALKER,36000,0) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION,24000,0) ,1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,24000,2) ,1.0f)
+            .effect(() -> new MobEffectInstance(ModEffects.SCULK_WALKER,24000,0) ,1.0f)
             .alwaysEdible().build();
 }

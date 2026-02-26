@@ -24,12 +24,10 @@
   "advancement.more_golden_apples.has_enchanted_abyss_golden_apple.title": "The Castaway of the Deep",
   "advancement.more_golden_apples.has_enchanted_abyss_golden_apple.description": "secure the golden apple of abyss hue",
 
-
-  "more_golden_apples.configuration.title": "More golden apples Configs",
-  "more_golden_apples.configuration.section.more_golden_apples.common.toml": "More golden apples Configs",
-  "more_golden_apples.configuration.section.more_golden_apples.common.toml.title": "More golden apples Configs",
-  "more_golden_apples.configuration.items": "Item List",
-  "more_golden_apples.configuration.logDirtBlock": "Log Dirt Block",
-  "more_golden_apples.configuration.magicNumberIntroduction": "Magic Number Text",
-  "more_golden_apples.configuration.magicNumber": "Magic Number"
+  "more_golden_apples.configuration.oceanic_bliss": "Oceanic Bliss effect Config",
+  "more_golden_apples.configuration.enderization": "Enderization effect config",
+  "more_golden_apples.configuration.enderization.enable_void_teleport": "Enable Void Teleport Protection",
+  "more_golden_apples.configuration.enderization.dodge_chance_perLevel": "Projectile Dodge Chance per Level",
+  "more_golden_apples.configuration.oceanic_bliss.enable_mining_fatigueImmune": "Underwater Mining Fatigue Immunity",
+  "more_golden_apples.configuration.oceanic_bliss.damage_boost_perLevel": "Underwater Damage Boost per Level"
 }
