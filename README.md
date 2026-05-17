@@ -10,6 +10,8 @@
 ## 简介
 提供了总共5种新的金苹果
 
+**前往下载**：[Releases](https://github.com/hantokei/more-golden-apple/releases/)
+
 ---
 ## 新增金苹果列表
 
