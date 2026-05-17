@@ -5,7 +5,10 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.Holder;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 
+@OnlyIn(Dist.CLIENT)
 public class BadAppleSoundInstance extends AbstractTickableSoundInstance {
     private final LivingEntity entity;
     private final Holder<MobEffect> effect;
