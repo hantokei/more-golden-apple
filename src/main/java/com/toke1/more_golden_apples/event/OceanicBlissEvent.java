@@ -27,13 +27,13 @@ public class OceanicBlissEvent {
 
     @SubscribeEvent
     public static void onPlayerTick(EntityTickEvent.Post event) {
-        if (event.getEntity() instanceof Player player && !player.level().isClientSide) {
+        if (event.getEntity() instanceof Player player && !player.level().isClientSide()) {
             if (Config.ENABLE_MINING_FATIGUE_IMMUNE.get() &&
                     player.hasEffect(ModEffects.OCEANIC_BLISS) &&
                     player.isUnderWater()) {
 
-                if (player.hasEffect(MobEffects.DIG_SLOWDOWN)) {
-                    player.removeEffect(MobEffects.DIG_SLOWDOWN);
+                if (player.hasEffect(MobEffects.MINING_FATIGUE)) {
+                    player.removeEffect(MobEffects.MINING_FATIGUE);
                 }
             }
         }
