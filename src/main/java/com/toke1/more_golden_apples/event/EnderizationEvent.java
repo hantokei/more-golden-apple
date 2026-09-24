@@ -11,7 +11,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.entity.projectile.ThrownEnderpearl;
+import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrownEnderpearl;
 import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -24,7 +24,7 @@ public class EnderizationEvent {
 
     @SubscribeEvent
     public static void onLivingTick(EntityTickEvent.Post event) {
-        if (!(event.getEntity() instanceof Player player) || player.level().isClientSide) return;
+        if (!(event.getEntity() instanceof Player player) || player.level().isClientSide()) return;
 
         if (player.hasEffect(ModEffects.ENDERIZATION)) {
             Level level = player.level();
@@ -34,9 +34,9 @@ public class EnderizationEvent {
                 serverLevel.sendParticles(ParticleTypes.PORTAL, player.getRandomX(0.5D), player.getRandomY(), player.getZ(0.5D), 2, 0.1, 0.1, 0.1, 0.02);
             }
 
-            if (Config.ENABLE_VOID_TELEPORT.get() && player.getY() < level.getMinBuildHeight() - 5) {
+            if (Config.ENABLE_VOID_TELEPORT.get() && player.getY() < level.getMinY() - 5) {
                 if (!teleportToSafety(player)) {
-                    player.teleportTo(player.getX(), level.getMinBuildHeight() + 70, player.getZ());
+                    player.teleportTo(player.getX(), level.getMinY() + 70, player.getZ());
                 }
                 player.setDeltaMovement(0, 0, 0);
                 player.resetFallDistance();
@@ -44,7 +44,7 @@ public class EnderizationEvent {
             }
 
             if (player.isInWaterOrRain() && player.tickCount % 20 == 0) {
-                player.hurt(level.damageSources().magic(), 2.0F);
+                player.hurtServer(serverLevel, level.damageSources().magic(), 2.0F);
                 teleportToSafety(player);
             }
         }
@@ -56,6 +56,12 @@ public class EnderizationEvent {
 
         var effect = player.getEffect(ModEffects.ENDERIZATION);
         if (effect == null) return;
+
+        // Pearl teleport damage has its own damage type in 26.1.2.
+        if (event.getSource().is(DamageTypes.ENDER_PEARL)) {
+            event.setCanceled(true);
+            return;
+        }
 
         if (event.getSource().is(DamageTypes.FALL)) {
             event.setCanceled(true);
@@ -85,7 +91,7 @@ public class EnderizationEvent {
 
         for (int i = 0; i < 64; ++i) {
             double targetX = player.getX() + (player.getRandom().nextDouble() - 0.5D) * 32.0D;
-            double targetY = Math.max(serverLevel.getMinBuildHeight() + 1, player.getY() + (double) (player.getRandom().nextInt(32) - 16));
+            double targetY = Math.max(serverLevel.getMinY() + 1, player.getY() + (double) (player.getRandom().nextInt(32) - 16));
             double targetZ = player.getZ() + (player.getRandom().nextDouble() - 0.5D) * 32.0D;
 
             BlockPos targetPos = BlockPos.containing(targetX, targetY, targetZ);

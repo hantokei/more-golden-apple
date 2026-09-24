@@ -25,8 +25,8 @@ public class AddItemModifier extends LootModifier {
     private final Item item;
     private final int count;
 
-    public AddItemModifier(LootItemCondition[] conditionsIn, Item item, int count) {
-        super(conditionsIn);
+    public AddItemModifier(LootItemCondition[] conditionsIn, int priority, Item item, int count) {
+        super(conditionsIn, priority);
         this.item = item;
         this.count = count;
     }
